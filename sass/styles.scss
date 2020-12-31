@@ -66,7 +66,7 @@ header {
   p {
     margin:0;
     color:#61778B;
-    width:100px;
+    width:300px;
     font-size:13px;
     
     &.view {
@@ -120,17 +120,7 @@ header {
       border-right:1px solid #3A7CBE;
       height:38px;
     }
-    
-    li + li {
-      width:78px;
-      border-left:1px solid #8BBEF3;
-    }
-    
-    li + li + li {
-      border-right:none;
-      width:79px;
-    }
-    
+     
     a {
       line-height:1;
       font-size:11px;
