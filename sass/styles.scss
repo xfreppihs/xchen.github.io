@@ -99,7 +99,7 @@ header {
     @include background(linear_gradient(#77B9FB, #3782CD));
     border-radius:5px;
     @include box-shadow(inset rgba(#fff, 0.45) 0 1px 0, inset rgba(#000, 0.2) 0 -1px 0);
-    width:80px;
+    width:240px;
     
     &:before {
       content:'';
@@ -107,7 +107,7 @@ header {
       z-index:-1;
       left:-5px;
       top:-4px;
-      right:-165px;
+      right:-5px;
       bottom:-6px;
       background:rgba(#000, 0.1);
       @include border-radius(8px);
@@ -116,11 +116,21 @@ header {
     
     li {
       width:79px;
-      float:right;
+      float:left;
       border-right:1px solid #3A7CBE;
       height:38px;
     }
-     
+    
+    li + li {
+      width:78px;
+      border-left:1px solid #8BBEF3;
+    }
+    
+    li + li + li {
+      border-right:none;
+      width:79px;
+    }
+    
     a {
       line-height:1;
       font-size:11px;
